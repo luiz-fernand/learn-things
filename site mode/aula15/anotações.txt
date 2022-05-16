@@ -1,0 +1,10 @@
+Vetor ou Arrey
+
+    var a[0, 1, 2, ...]
+
+    a   ->  Variavel vetor ou arrey
+    []  ->  Elemento
+    Nº  ->  Índice ou chave
+    0.. ->  Conteúdo
+
+    let -> Declara arrays

@@ -1,0 +1,70 @@
+OPERADORES ARITIMÉTICOS
+
+    +   ->  Soma
+    -   ->  Subtração
+    *   ->  Multiplicação
+    /   ->  Divisão
+    %   ->  Resto da divisão
+    **  ->  Potência
+
+
+    Ordem de precedência (De cima pra baixo, e no comando, da esquerda para direita)
+
+        1.  ()
+        2.  **
+        3.  *   /   %
+        4.  +   -
+
+
+    Auto implementação
+
+        var n = 3   ->  Atribuição simples
+        n = n + 4   ->  n += 4
+        n = n - 5   ->  n -= 5
+        n = n * 4   ->  n *= 4
+        n = n / 2   ->  n /= 2
+        n = n ** 2  ->  n **= 2
+        n = n % 5   ->  n %= 5
+
+        var x = 3
+        x = x + 1   ->  x += 1  ->  x++
+        x = x - 1   ->  x -= 1  ->  x--
+
+
+OPERADORES RELACIONAIS
+
+    >    ->  Maior que
+    <    ->  Menor que
+    >=   ->  Maior ou igual que
+    <=   ->  Menor ou igual que
+    ==   ->  Igual á
+    !=   ->  Diferente de
+    ===  ->  Indêntico á (Tipo e valor)
+    !==  ->  Tipos diferentes com valores iguais
+
+    Comparações retornam um valor boolean (true ou false)
+        Ex.
+        5 > 8       ->  false
+        5 > 8 - 4   ->  true
+
+
+OPERADORES LÓGICOS
+
+    !   ->  Negação / Inversão
+    &&  ->  Conjunção / E
+    ||  ->  Disjunção / Ou
+
+
+OPERADOR TERNÁRIO
+
+    teste ? true : false    ->  Como se fosse um IF, com teste e opções caso for true ou false
+
+
+ORDEM DE PRECEDÊNCIA
+
+    1.  Operadores aritiméticos (Ordem própria à cima)
+    2.  Operadores relacionais (da esquerda para direita, sem ordem específica)
+    3.  !
+    4.  &&
+    5.  ||
+    6.  Operador ternário

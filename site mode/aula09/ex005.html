@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-color: rgb(0, 68, 255);
+                color: white;
+                font: normal 18pt Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Iniciando os estudos DOM</h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+        <div id="msg" name="dd" class="ho">Clique em mim</div>
+        <script>
+            var corpo = window.document.body
+            var p1 = window.document.getElementsByTagName('p')[1] //Selecioanando elemento por marca [Especificando qual elemento dentre os outros do mesmo tipo á partir do 0]
+            var d1 = window.document.getElementById('msg')
+            var d2 = window.document.getElementsByName('dd')[0]
+            var d3 = window.document.getElementsByClassName('ho')[0]
+            var tes1 = window.document.querySelector('div#msg') //Se usa # quando é por ID
+            var tes2 = window.document.querySelector('div.ho') //Se usa . quando é por Class
+            var tes3 = window.document.querySelectorAll('div#msg')[0]
+
+            window.document.write('<br>Está escrito assim: ' + p1.innerText) //Pega o texto bruto
+            window.document.write('<br>E dessa forma, assim: ' + p1.innerHTML) //Pega o código completo
+            
+            p1.style.color = 'purple'
+            corpo.style.backgroundColor = 'black'
+            tes1.style.background = 'blue'
+
+            d2.innerText = 'Testando alterações'
+            alert(d2.innerText)
+
+            /*
+            Árvore DOM
+
+            Os de cima são os Parents e os de baixo são os Child, sempre varia de acordo com a linha observada
+
+            
+                    |-> location                    |-> title
+            window -|-> document -> html -|-> head -|-> meta
+                    |-> history           |-> body ------|-> h1
+                                                         |-> p
+                                                         |-> p -> strong
+                                                         |-> div
+            */
+        </script>
+    </body>
+</html>

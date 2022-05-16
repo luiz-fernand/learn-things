@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos DOM</title>
+        <style>
+            div#area {
+                font: normal 20pt Arial;
+                background: blue;
+                color: white;
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+            Interaja...
+        </div>
+        <script>
+            // function ação(parametro){  bloco  }
+            var a = window.document.getElementById('area')
+
+            //Tanto no HTML com as tags logo a cima, quanto dessa forma em JS a baixo, funciona do mesmo jeito
+            /*
+            a.addEventListener('click', clicar)
+            a.addEventListener('mouseenter', entrar)
+            a.addEventListener('mouseout', sair)
+            */
+            
+            var n = 0
+
+            function clicar(){
+                if(n == 0) {
+                    n += 1
+                    a.innerText = 'Clicou!'
+                    a.style.background = 'red'
+                }
+                else {
+                    n -= 1
+                    a.innerText = 'Ain'
+                    a.style.background = 'purple'
+                }
+            }
+            function entrar(){
+                a.innerText = 'Entrou!'
+            }
+            function sair(){
+                a.innerText = 'Saiu ;-;'
+                a.style.background = 'blue'
+            }
+        </script>
+    </body>
+</html>

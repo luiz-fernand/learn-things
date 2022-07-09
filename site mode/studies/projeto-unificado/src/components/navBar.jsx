@@ -1,9 +1,9 @@
 import React from 'react'
 
 import {Link} from 'react-router-dom'
-import './navBar.css'
+import '../style/navBar.css'
 
-import logo from '../imagens/PU-logo-title.png'
+import logo from '../media/PU-logo-title.png'
 
 const navBar = () => {
     return (
@@ -11,8 +11,9 @@ const navBar = () => {
             <img src={logo} title='PU Logo' alt='PU Logo'/>
             <nav className='nav-container'>
                 <Link to='/'>Home</Link>
-                <Link to='/'>Home</Link>
-                <Link to='/'>Home</Link>
+                <Link to='/'>Anotações</Link>
+                <Link to='/'>Exercicios</Link>
+                <Link to='/'>Contato</Link>
             </nav>
         </div>
     )

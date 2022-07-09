@@ -1,9 +1,9 @@
 import React from 'react'
 
-import './App.css'
+import './style/Home.css'
 import NavBar from './components/navBar'
 
-const App = () => {
+const Home = () => {
   return (
     <div className='countainer'>
       <NavBar/>
@@ -12,4 +12,4 @@ const App = () => {
   )
 }
  
-export default App
+export default Home

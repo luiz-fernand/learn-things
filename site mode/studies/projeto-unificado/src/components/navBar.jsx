@@ -3,10 +3,12 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './navBar.css'
 
+import logo from '../imagens/PU-logo-title.png'
+
 const navBar = () => {
     return (
         <div className='navBar-container'>
-            <h1 className='title-navBar'>Projeto Unificado</h1>
+            <img src={logo} title='PU Logo' alt='PU Logo'/>
             <nav className='nav-container'>
                 <Link to='/'>Home</Link>
                 <Link to='/'>Home</Link>

@@ -25,9 +25,6 @@ a {
 }
 
 .title-navBar {
-    font: bold 16pt Gulzar;
-    max-width: 90px;
-    max-height: 25;
     flex: 1;
     cursor: default;
 }

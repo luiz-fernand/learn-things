@@ -1,0 +1,12 @@
+.container {
+    padding: 20px 0;
+    font: normal 20pt 'Kanit';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pu-logo {
+    max-width: 350px;
+    padding: 20px 0;
+}

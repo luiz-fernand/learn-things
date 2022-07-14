@@ -19,7 +19,7 @@
 
 a {
     color: white;
-    font: bold 12pt Arial;
+    font: normal 15pt 'Oswald';
     text-decoration: none;
     margin: 0 20px;
     transition: all 0.5s ease;
@@ -27,4 +27,5 @@ a {
 a:hover {
     color: rgb(183, 0, 255);
     border-bottom: 1px solid;
+    font: bold 18pt 'Oswald';
 }

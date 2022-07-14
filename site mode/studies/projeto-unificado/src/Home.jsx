@@ -1,13 +1,15 @@
 import React from 'react'
 
 import './style/Home.css'
-import NavBar from './components/navBar'
+
+import PULogo from './media/PU-logo-grande.png'
 
 const Home = () => {
   return (
-    <div className='countainer'>
-      <NavBar/>
-      <p>Hello World!!</p>
+    <div className='container'>
+      <h1>Olá! Bem vindo ao</h1>
+      <img className='pu-logo' src={PULogo} alt='PU Logo'/>
+      <p>Um Projeto unificado cuja função é a de unir meus aprendizados em HTLM, CSS, JavaScript e ReactJS</p>
     </div>
   )
 }

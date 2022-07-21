@@ -1,6 +1,15 @@
 .container {
-    padding: 20px 0;
+    padding-top: 60px;
     font: normal 20pt 'Kanit';
+    display: flex;
+    flex-direction: column;
+}
+
+.pu-container {
+    padding: 40px 0;
+    background-image: url('../media/backgroundHome.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,5 +17,38 @@
 
 .pu-logo {
     max-width: 350px;
+    padding: 25px 0;
+}
+
+.sobre-container {
+    background-color: rgb(229, 197, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px 0;
+    border-top: solid black 1px;
+}
+
+.sobre-container p {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sobre-title {
+    text-align: left;
+}
+
+.imagens {
+    padding: 10px 0;
+    background-color: rgb(196, 170, 219);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagens img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 15px 10px;
 }

@@ -8,6 +8,7 @@ import Home from './Home'
 import Anotacoes from './Anotacoes'
 import Exercicios from './Exercicios'
 import Contato from './Contato'
+import Footer from './components/footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -19,5 +20,6 @@ root.render(
       <Route path='/exercicios' element={<Exercicios/>}/>
       <Route path='/contato' element={<Contato/>}/>
     </Routes>
+    <Footer/>
   </BrowserRouter>
 )

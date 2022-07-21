@@ -1,0 +1,14 @@
+.footer-container {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    display: flex;
+    padding: 0 10px;
+}
+
+.p1 {
+    flex: 1;
+}
+
+.p2 {
+    justify-content: right;
+}
